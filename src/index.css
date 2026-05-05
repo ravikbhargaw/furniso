@@ -44,6 +44,14 @@ h1 { font-size: 80px; font-weight: 700; line-height: 1.05; letter-spacing: -0.01
 h2 { font-size: 56px; font-weight: 600; line-height: 1.07; letter-spacing: -0.005em; }
 h3 { font-size: 32px; font-weight: 600; letter-spacing: 0.007em; }
 p.lead { font-size: 24px; font-weight: 400; color: var(--jet-black); margin-bottom: 24px; }
+
+@media (max-width: 734px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 24px; }
+  p.lead { font-size: 18px; }
+}
+
 .text-muted { color: var(--text-muted); }
 
 /* Layout */
@@ -302,13 +310,23 @@ p.lead { font-size: 24px; font-weight: 400; color: var(--jet-black); margin-bott
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at center, #fff 0%, #f5f5f7 100%);
+  padding: 0 20px;
 }
 
 .hero-overlay-text {
   position: absolute;
   top: 15%;
   z-index: 10;
+  width: 100%;
+  padding: 0 20px;
 }
+
+@media (max-width: 734px) {
+  .hero-overlay-text {
+    top: 20%;
+  }
+}
+
 
 .hero-visual-container {
   position: relative;
@@ -432,8 +450,134 @@ p.lead { font-size: 24px; font-weight: 400; color: var(--jet-black); margin-bott
 
 /* Responsive */
 @media (max-width: 734px) {
-  h1 { font-size: 40px; }
-  h2 { font-size: 32px; }
-  .section-padding { padding: 60px 0; }
-  .pricing-bar { flex-direction: column; gap: 12px; border-radius: 24px; bottom: 12px; }
+  .section-padding { padding: 40px 0; }
+  .container-apple { padding: 0 20px; }
+  
+  .product-tile {
+    height: auto;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .product-tile h3 {
+    font-size: 20px;
+    height: auto;
+  }
+  
+  .product-tile .product-tile-img {
+    height: 160px;
+    margin: 16px 0;
+  }
+  
+  .footer-brand-text {
+    font-size: 18vw;
+  }
+  
+  .pricing-bar {
+    width: calc(100% - 40px);
+    left: 20px;
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    border-radius: 20px;
+    bottom: 20px;
+  }
+}
+
+/* --- EDITORIAL FOOTER (MEAVEN STYLE) --- */
+.footer-meaven {
+  background-color: var(--white);
+  padding: 120px 0 60px;
+  border-top: 1px solid #f0f0f2;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 120px;
+}
+
+.footer-heading {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.footer-text-large {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--jet-black);
+  max-width: 400px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 16px;
+}
+
+.footer-list button,
+.footer-list a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--jet-black);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.footer-list button:hover,
+.footer-list a:hover {
+  color: var(--apple-blue);
+}
+
+.footer-bottom {
+  border-top: 1px solid #f0f0f2;
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-info {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.footer-brand-large {
+  margin-top: 100px;
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+.footer-brand-text {
+  font-size: 15vw;
+  font-weight: 800;
+  color: #f8f8f9;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 60px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 40px; }
+  .footer-brand-text { font-size: 20vw; }
 }

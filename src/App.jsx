@@ -206,59 +206,60 @@ const BookingPage = ({ setPage }) => {
 };
 
 const Footer = ({ setPage }) => (
-  <footer className="bg-apple-gray pt-20 pb-12 border-t border-gray-200">
+  <footer className="footer-meaven">
     <div className="container-apple">
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-20">
-        <div className="col-span-2">
-          <div className="flex items-center gap-2 mb-6">
-            <img src={logoImg} className="nav-logo-img" alt="Furniso" />
-            <span className="font-bold text-lg tracking-tighter">FURNISO</span>
-          </div>
-          <p className="text-sm text-muted max-w-xs">
+      <div className="footer-grid">
+        <div>
+          <h4 className="footer-heading">About Furniso</h4>
+          <p className="footer-text-large">
             Direct-from-factory custom furniture manufacturer. 
-            Redefining luxury through manufacturing transparency and direct delivery.
+            Redefining luxury through transparency.
           </p>
+          <div className="mt-12 flex gap-8">
+            <button onClick={() => setPage('booking')} className="btn-apple btn-apple-secondary text-sm">Book Visit</button>
+            <button onClick={() => setPage('builder')} className="btn-apple btn-apple-primary text-sm">Sofa Builder</button>
+          </div>
         </div>
+        
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-wider mb-6">Collections</h4>
-          <ul className="space-y-3 text-xs text-muted">
-            <li><button onClick={() => setPage('shop')} className="hover:text-apple-blue">Sofas & Sectionals</button></li>
-            <li><button onClick={() => setPage('shop')} className="hover:text-apple-blue">Dining Sets</button></li>
-            <li><button onClick={() => setPage('shop')} className="hover:text-apple-blue">Center Tables</button></li>
-            <li><button onClick={() => setPage('shop')} className="hover:text-apple-blue">Ottomans</button></li>
+          <h4 className="footer-heading">Collections</h4>
+          <ul className="footer-list">
+            <li><button onClick={() => setPage('shop')}>Sofas & Sectionals</button></li>
+            <li><button onClick={() => setPage('shop')}>Dining Tables</button></li>
+            <li><button onClick={() => setPage('shop')}>Center Tables</button></li>
+            <li><button onClick={() => setPage('shop')}>Ottomans</button></li>
           </ul>
         </div>
+
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-wider mb-6">Services</h4>
-          <ul className="space-y-3 text-xs text-muted">
-            <li><button onClick={() => setPage('booking')} className="hover:text-apple-blue">Site Visit Booking</button></li>
-            <li><button onClick={() => setPage('builder')} className="hover:text-apple-blue">Sofa Configurator</button></li>
-            <li><button className="hover:text-apple-blue">Corporate Orders</button></li>
-            <li><button className="hover:text-apple-blue">Factory Tour</button></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-xs font-bold uppercase tracking-wider mb-6">Legal & SEO</h4>
-          <ul className="space-y-3 text-xs text-muted">
-            <li><button onClick={() => setPage('privacy')} className="hover:text-apple-blue">Privacy Policy</button></li>
-            <li><button onClick={() => setPage('terms')} className="hover:text-apple-blue">Terms & Conditions</button></li>
-            <li><button onClick={() => setPage('shipping')} className="hover:text-apple-blue">Shipping Policy</button></li>
-            <li><button onClick={() => setPage('refund')} className="hover:text-apple-blue">Refund Policy</button></li>
+          <h4 className="footer-heading">Company</h4>
+          <ul className="footer-list">
+            <li><button onClick={() => setPage('privacy')}>Privacy Policy</button></li>
+            <li><button onClick={() => setPage('terms')}>Terms of Service</button></li>
+            <li><button onClick={() => setPage('shipping')}>Shipping & Delivery</button></li>
+            <li><button onClick={() => setPage('refund')}>Refund Policy</button></li>
           </ul>
         </div>
       </div>
-      
-      <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p className="text-[10px] text-muted">Copyright © 2026 Furniso Inc. All rights reserved. Mumbai, India.</p>
-        <div className="flex gap-8">
-           <a href="#" className="text-[10px] text-muted hover:text-apple-blue">Instagram</a>
-           <a href="#" className="text-[10px] text-muted hover:text-apple-blue">Facebook</a>
-           <a href="#" className="text-[10px] text-muted hover:text-apple-blue">LinkedIn</a>
+
+      <div className="footer-bottom">
+        <div className="footer-info">
+          <p>Furniso Manufacturing Unit 01</p>
+          <p>Bengaluru, India</p>
         </div>
+        <div className="footer-info text-right">
+          <p>© 2026 Furniso Inc.</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
+
+      <div className="footer-brand-large">
+        <h1 className="footer-brand-text">FURNISO</h1>
       </div>
     </div>
   </footer>
 );
+
 
 const LegalPage = ({ title, content, setPage }) => (
   <div className="section-padding container-apple min-h-screen">
