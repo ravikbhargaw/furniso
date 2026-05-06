@@ -104,7 +104,9 @@ p.lead { font-size: 24px; font-weight: 400; color: var(--jet-black); margin-bott
   height: 36px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: multiply; /* Removes white/light backgrounds */
 }
+
 
 .nav-links-desktop {
   display: flex;
