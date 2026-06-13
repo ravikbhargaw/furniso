@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with Furniso to start your custom upholstery brief. Request a quote or ask for fabric samples." />
+    <title>FURNISO | Contact Us — Request a Quote</title>
+    <link rel="stylesheet" href="/furniso.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <div class="container nav-container">
+        <a href="/index.html" class="logo-link">
+          <img src="/images/logo.jpg" alt="FURNISO" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a href="/contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
+        <li><a href="/contact.html" class="btn btn-primary" style="margin-top: 16px; font-size: 14px;">Request a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- Page Hero -->
+    <section>
+      <div class="container" style="text-align: center; max-width: 800px; padding: 40px 0 0;">
+        <div class="eyebrow" style="justify-content: center;">Get in Touch</div>
+        <h1 style="margin-bottom: 24px;">Start with a brief.</h1>
+        <p class="lead">Tell us the piece, the quantity, and the timeline — we'll take it from there.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info Columns -->
+    <section style="background-color: var(--surface);">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column Form -->
+          <div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key (Get your free key at https://web3forms.com) -->
+              <input type="hidden" name="access_key" value="8fdc2051-3c7b-43bd-8a5c-f4d861bdb41d" />
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="company">Company / Project name</label>
+                <input type="text" id="company" name="company" class="form-control" placeholder="e.g. Coworking Space, Hotel, Cafe Name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="you@domain.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 77958 70777" />
+              </div>
+              <div class="form-group">
+                <label for="type">What are you looking for?</label>
+                <select id="type" name="type" class="form-control" style="height: 45px;">
+                  <option value="Sofa">Sofa / Sectional</option>
+                  <option value="Upholstered Chair">Upholstered Chair / Armchair</option>
+                  <option value="Headboard">Bed Headboard</option>
+                  <option value="Custom">Custom Upholstery</option>
+                  <option value="Multiple">Multiple Items / Full Project</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Approximate quantity *</label>
+                <input type="number" id="quantity" name="quantity" class="form-control" min="1" required placeholder="Minimum 4 units for standard orders" />
+              </div>
+              <div class="form-group">
+                <label for="brief">Tell us more</label>
+                <textarea id="brief" name="brief" class="form-control" placeholder="Brief description, approximate dimensions, fabric direction, or timeline if known..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">Send Enquiry</button>
+            </form>
+            <p style="font-size: 12px; color: var(--text-secondary); margin-top: 16px; text-align: center; font-style: italic;">
+              We respond to all enquiries within 24 hours.
+            </p>
+          </div>
+
+          <!-- Right Column Direct Info -->
+          <div class="contact-info-column">
+            <div class="info-block">
+              <h3>WhatsApp (Primary)</h3>
+              <p style="font-size: 18px; font-weight: 500; margin-bottom: 8px;">
+                <a href="https://wa.me/917795870777" style="color: var(--text-primary); text-decoration: none;">+91 77958 70777</a>
+              </p>
+              <p class="sub-desc">Fastest way to reach us — share a reference image, a sketch, or just a message.</p>
+            </div>
+            
+            <div class="info-block">
+              <h3>Email</h3>
+              <p style="font-size: 16px; font-weight: 500;">
+                <a href="mailto:hello@furniso.in" style="color: var(--text-primary); text-decoration: none;">hello@furniso.in</a>
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h3>Location</h3>
+              <p style="font-weight: 500;">Bengaluru, Karnataka, India</p>
+              <p class="sub-desc">Factory visits by appointment only.</p>
+            </div>
+
+            <div class="info-block">
+              <h3>Working Hours</h3>
+              <p>Monday – Saturday</p>
+              <p style="font-weight: 500;">10am – 6pm IST</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric Sample Request Strip -->
+        <div class="sample-strip">
+          <h2>Want to see the fabrics first?</h2>
+          <p>For large commercial orders, we can send a physical sample pack of up to 8 fabric swatches to your office or site — at no charge.</p>
+          <p>Email us at <a href="mailto:samples@furniso.in"><strong>samples@furniso.in</strong></a> with your delivery address and project brief.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="/index.html" class="footer-logo">
+            <img src="/images/logo.jpg" alt="FURNISO" />
+          </a>
+          <ul class="footer-links">
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <a href="/contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Furniso. All rights reserved.</span>
+          <span>Bengaluru, India</span>
+          <span>furniso.in</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917795870777" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.488 1.459 5.407 1.461 5.432.003 9.85-4.416 9.853-9.85.002-2.633-1.019-5.107-2.876-6.966C17.177 1.982 14.707 1.01 12.01 1.01c-5.441 0-9.86 4.417-9.863 9.852-.001 1.926.501 3.806 1.458 5.412L2.64 19.928l4.007-1.054zM17.472 14.382c-.3-.149-1.778-.878-2.077-.988-.299-.108-.517-.162-.734.162-.217.324-.841 1.059-1.031 1.275-.19.216-.379.243-.679.094-1.294-.647-2.148-1.15-3.003-2.615-.224-.383.224-.356.643-1.198.07-.149.035-.279-.017-.383-.053-.105-.518-1.246-.709-1.707-.186-.447-.376-.386-.517-.393-.134-.007-.287-.008-.439-.008-.153 0-.401.057-.611.286-.21.23-.801.783-.801 1.91 0 1.126.818 2.215.932 2.37.115.154 1.61 2.459 3.899 3.447.545.235.97.375 1.302.48.547.174 1.046.15 1.441.09.44-.067 1.778-.727 2.027-1.429.25-.701.25-1.3.176-1.429-.074-.13-.272-.21-.572-.359z"/>
+      </svg>
+    </a>
+
+    <script>
+      // Mobile Nav Toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobileNav');
+      
+      if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', () => {
+          mobileNav.classList.toggle('open');
+          const isOpened = mobileNav.classList.contains('open');
+          hamburger.innerHTML = isOpened 
+            ? `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>`
+            : `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+        });
+      }
+    </script>
+  </body>
+</html>

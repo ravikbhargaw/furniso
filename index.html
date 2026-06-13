@@ -4,10 +4,308 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Furniso | Factory Direct Custom Furniture</title>
+    <meta name="description" content="Furniso manufactures custom sofas, upholstered chairs, and bed headboards directly from our Bangalore factory with no middleman markup." />
+    <title>FURNISO | Factory Direct Custom Furniture Bangalore</title>
+    <link rel="stylesheet" href="/furniso.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <div class="container nav-container">
+        <a href="/index.html" class="logo-link">
+          <img src="/images/logo.jpg" alt="FURNISO" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-cta">
+          <a href="/contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/contact.html" class="btn btn-primary" style="margin-top: 16px; font-size: 14px;">Request a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section style="padding-top: 64px;">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <div class="eyebrow">Factory Direct · Bangalore</div>
+            <h1 class="hero-title">Every piece, made for the space it will live in.</h1>
+            <p class="lead">Furniso manufactures custom sofas, upholstered chairs, and bed headboards directly from our factory — built to your specification, in the fabric and dimensions you choose. No showroom markup. No compromise.</p>
+            <div class="hero-ctas">
+              <a href="/products.html" class="btn btn-primary">Explore Products</a>
+              <a href="/how-it-works.html" class="btn btn-secondary">How It Works</a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="/images/product-hero.png" alt="Furniso Custom Sofa" />
+          </div>
+        </div>
+
+        <!-- Stats Strip -->
+        <div class="stats-strip">
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Custom — every order</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">14–21 days</span>
+            <span class="stat-label">Average lead time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">50+</span>
+            <span class="stat-label">Fabric options</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">Zero</span>
+            <span class="stat-label">Middleman markup</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 — Product Categories -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="eyebrow">What We Make</div>
+        <h2 style="margin-bottom: 16px;">Built for commercial and hospitality spaces</h2>
+        <p class="lead" style="max-width: 600px; margin-bottom: 48px;">From boutique hotel lobbies to coworking lounges — we make furniture that holds up to real use, and looks the part doing it.</p>
+        
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/sofa-placeholder.jpg" alt="Sofas & Sectionals placeholder" />
+            </div>
+            <div class="card-content">
+              <h3>Sofas &amp; Sectionals</h3>
+              <p>Modular and fixed-frame sofas. Fully upholstered, custom dimensions.</p>
+              <a href="/products.html#sofas" class="card-link">View →</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/chair-placeholder.jpg" alt="Upholstered Chairs placeholder" />
+            </div>
+            <div class="card-content">
+              <h3>Upholstered Chairs</h3>
+              <p>Lounge chairs, armchairs, accent chairs. Fabric and foam spec to your brief.</p>
+              <a href="/products.html#chairs" class="card-link">View →</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/headboard-placeholder.jpg" alt="Bed Headboards placeholder" />
+            </div>
+            <div class="card-content">
+              <h3>Bed Headboards</h3>
+              <p>Panel and buttoned headboards for hospitality. Single to king, custom height.</p>
+              <a href="/products.html#headboards" class="card-link">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="/products.html" class="btn btn-secondary">See All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 — Why Furniso -->
+    <section>
+      <div class="container">
+        <div class="eyebrow">The Furniso Difference</div>
+        <h2 style="margin-bottom: 48px;">What factory-direct actually means for you</h2>
+        
+        <div class="grid-2">
+          <div class="why-quote-box">
+            <p class="why-quote">"We don't stock furniture. We build it — for your space, your spec, your timeline."</p>
+          </div>
+          <div class="diff-list">
+            <div class="diff-item">
+              <div class="diff-num">01 / NO SHOWROOM MARKUP</div>
+              <h3 class="diff-title">No showroom markup</h3>
+              <p class="diff-desc">You pay for material, craft, and delivery. Not for our real estate.</p>
+            </div>
+            <div class="diff-item">
+              <div class="diff-num">02 / YOUR SPECIFICATION</div>
+              <h3 class="diff-title">Your specification</h3>
+              <p class="diff-desc">Dimensions, fabric, foam density, leg finish. You choose every variable.</p>
+            </div>
+            <div class="diff-item">
+              <div class="diff-num">03 / DIRECT COMMUNICATION</div>
+              <h3 class="diff-title">Direct communication</h3>
+              <p class="diff-desc">Your brief goes straight to the production team. No account manager in between.</p>
+            </div>
+            <div class="diff-item">
+              <div class="diff-num">04 / COMMERCIAL GRADE</div>
+              <h3 class="diff-title">Commercial grade</h3>
+              <p class="diff-desc">FR-rated foam, reinforced frames, contract-spec fabrics available on request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Who We Work With -->
+    <section class="bg-surface">
+      <div class="container">
+        <div class="eyebrow">Our Clients</div>
+        <h2 style="margin-bottom: 48px;">Made for spaces that demand more than off-the-shelf</h2>
+        
+        <div class="grid-4">
+          <!-- Card 1 -->
+          <div class="client-card">
+            <div class="client-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+              </svg>
+            </div>
+            <h3 class="client-title">Coworking Operators</h3>
+            <p class="client-desc">Lounge seating, breakout sofas, and cabin chairs that hold up to daily commercial use.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="client-card">
+            <div class="client-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.24 9.816V4.75A2.25 2.25 0 014.5 2.5h15a2.25 2.25 0 012.25 2.25v5.066m-19.5 0A2.25 2.25 0 00.75 12v4.5A2.25 2.25 0 003 18.75h18a2.25 2.25 0 002.25-2.25V12a2.25 2.25 0 00-1.49-2.184M2.24 9.816L3.83 21.64A2.25 2.25 0 005.98 23.5h12.04a2.25 2.25 0 002.15-1.86l1.59-11.824" />
+              </svg>
+            </div>
+            <h3 class="client-title">Hotels &amp; Stays</h3>
+            <p class="client-desc">Custom headboards and room chairs built to your room spec and brand palette.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="client-card">
+            <div class="client-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-16.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-16.25v14.25" />
+              </svg>
+            </div>
+            <h3 class="client-title">Cafes &amp; Restaurants</h3>
+            <p class="client-desc">Banquette seating, accent chairs, and host furniture in fabric or leather-look.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="client-card">
+            <div class="client-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122l9.37-9.37m0 0l-1.01-1.01-8.36 8.36L5.4 9.97l-1.01 1.01 5.14 5.14z" />
+              </svg>
+            </div>
+            <h3 class="client-title">Architects &amp; Designers</h3>
+            <p class="client-desc">Factory access for specification-grade pieces. Custom finish samples available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 — Process Teaser -->
+    <section>
+      <div class="container">
+        <div class="eyebrow">How It Works</div>
+        <h2 style="margin-bottom: 32px;">From brief to delivery in 3 steps</h2>
+        
+        <div class="steps-strip">
+          <div class="step-item">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Share your brief</h3>
+            <p class="step-desc">Tell us the piece, the dimensions, the fabric direction, and the quantity. We'll confirm feasibility within 24 hours.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Approve the spec</h3>
+            <p class="step-desc">We share a full spec sheet with material samples, dimensions, and lead time. You approve before a single cut is made.</p>
+          </div>
+          <div class="step-item">
+            <span class="step-num">03</span>
+            <h3 class="step-title">We build and deliver</h3>
+            <p class="step-desc">Production begins on approval. We deliver to site with installation support available on request.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="/how-it-works.html" class="btn btn-secondary">See the Full Process</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 — CTA Banner -->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="cta-banner-wrapper">
+          <h2>Have a project in mind?</h2>
+          <p>Share the space, the scale, and the timeline — we'll come back with a spec and a number.</p>
+          <a href="/contact.html" class="btn btn-accent">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="/index.html" class="footer-logo">
+            <img src="/images/logo.jpg" alt="FURNISO" />
+          </a>
+          <ul class="footer-links">
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <a href="/contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Furniso. All rights reserved.</span>
+          <span>Bengaluru, India</span>
+          <span>furniso.in</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917795870777" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" id="whatsappFloat">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.488 1.459 5.407 1.461 5.432.003 9.85-4.416 9.853-9.85.002-2.633-1.019-5.107-2.876-6.966C17.177 1.982 14.707 1.01 12.01 1.01c-5.441 0-9.86 4.417-9.863 9.852-.001 1.926.501 3.806 1.458 5.412L2.64 19.928l4.007-1.054zM17.472 14.382c-.3-.149-1.778-.878-2.077-.988-.299-.108-.517-.162-.734.162-.217.324-.841 1.059-1.031 1.275-.19.216-.379.243-.679.094-1.294-.647-2.148-1.15-3.003-2.615-.224-.383.224-.356.643-1.198.07-.149.035-.279-.017-.383-.053-.105-.518-1.246-.709-1.707-.186-.447-.376-.386-.517-.393-.134-.007-.287-.008-.439-.008-.153 0-.401.057-.611.286-.21.23-.801.783-.801 1.91 0 1.126.818 2.215.932 2.37.115.154 1.61 2.459 3.899 3.447.545.235.97.375 1.302.48.547.174 1.046.15 1.441.09.44-.067 1.778-.727 2.027-1.429.25-.701.25-1.3.176-1.429-.074-.13-.272-.21-.572-.359z"/>
+      </svg>
+    </a>
+
+    <script>
+      // Mobile Nav Toggle
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobileNav');
+      
+      if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', () => {
+          mobileNav.classList.toggle('open');
+          const isOpened = mobileNav.classList.contains('open');
+          hamburger.innerHTML = isOpened 
+            ? `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>`
+            : `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+        });
+      }
+    </script>
   </body>
 </html>
